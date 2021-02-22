@@ -1,7 +1,7 @@
 package subtract
 
 import (
-	"github.com/anugoli05/MyGoWSwithEnv/.MyPackages/mathutils"
+	"github.com/anugoli05/MyGoWSwithEnvbuild/.MyPackages/mathutils"
 	
 )
 

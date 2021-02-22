@@ -1,10 +1,11 @@
-package subtract
+package test
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/anugoli05/MyGoWSwithEnv/.MyPackages"
+	"github.com/anugoli05/MyGoWSwithEnvbuild/.MyPackages"
+	"github.com/anugoli05/MyGoWSwithEnvbuild/Subtract"
 )
 
 func TestCallSubhere(t *testing.T) {
@@ -13,7 +14,7 @@ func TestCallSubhere(t *testing.T) {
 	t.Logf("\nThis is message before calling SUBTRACT function the test go file")
 	/*Calling max function this is a comment */
 	var Subresultvalue int
-	Subresultvalue = CallSub(5, 2)
+	Subresultvalue = subtract.CallSub(5, 2)
 	//To log any info while test is running the test has to be run in command prompt with go test -v command to show log
 	t.Logf("\nThis is message from t.Logf and Subtraction returned is  %d", Subresultvalue)
 	

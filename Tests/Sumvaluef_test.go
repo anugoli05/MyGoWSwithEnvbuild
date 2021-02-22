@@ -1,13 +1,11 @@
 package test
 
 import (
+	"os"
 	"testing"
-    "os"
+
 	"github.com/stretchr/testify/assert"
-	mypac "github.com/anugoli05/MyGoWSwithEnv/.MyPackages"
-	mycode "github.com/anugoli05/MyGoWSwithEnv/Mycode"
-	
-	
+	""github.com/anugoli05/MyGoWSwithEnvbuild/Sumv"
 )
 
 //TestSumvalue function validates Sumvalue function
@@ -18,7 +16,7 @@ func TestSumvalue(t *testing.T) {
 	t.Logf("\nThis is message before calling Sum function the test go file")
 	/*Calling max function this is a comment */
 	var Sumresultvalue int
-	Sumresultvalue = mycode.Sumvalue(15, 5)
+	Sumresultvalue = sumvalue.Sumvalue(15, 5)
 	//To log any info while test is running the test has to be run in command prompt with go test -v command to show log
 	t.Logf("\nThis is message from t.Logf and Maxvalue returned is  %d", Sumresultvalue)
 	// assert.Equal(t,Maxvalue,15)
@@ -31,7 +29,7 @@ func TestSumvalue(t *testing.T) {
 	assert.Equal(t, 20, Sumresultvalue)
 	t.Log("Testpassed after the assert logic of max function in test go file.")
 	
-	config, err := mypac.LoadConfig("./..")
+	config, err := util.LoadConfig("./..")
 
  if err!=nil{
  t.Fatal("cannot  load config: ", err)

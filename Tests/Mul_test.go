@@ -1,10 +1,10 @@
-package multiply
+package test
 
 import (
 	"testing"
-
 	"github.com/stretchr/testify/assert"
-	"github.com/anugoli05/MyGoWSwithEnv/.MyPackages"
+	"github.com/anugoli05/MyGoWSwithEnvbuild/.MyPackages"
+	"github.com/anugoli05/MyGoWSwithEnvbuild/Multiply"
 )
 
 //TestMultiplyvalue function validates Sumvalue function
@@ -14,7 +14,7 @@ func TestMultiplyvalue(t *testing.T) {
 	t.Logf("\nThis is message before calling MULTIPLY function the test go file")
 	/*Calling max function this is a comment */
 	var Mulresultvalue int
-	Mulresultvalue = Multiplyvalue(3, 4)
+	Mulresultvalue = multiply.Multiplyvalue(3, 4)
 	//To log any info while test is running the test has to be run in command prompt with go test -v command to show log
 	t.Logf("\nThis is message from t.Logf and Maxvalue returned is  %d", Mulresultvalue)
 	// assert.Equal(t,Maxvalue,15)
