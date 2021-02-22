@@ -1,3 +1,5 @@
+//+build mul,!sub,!sum
+
 package test
 
 import (

@@ -1,11 +1,13 @@
+//+build !mul,!sub,sum
+
 package test
 
 import (
 	"os"
 	"testing"
-
+	"github.com/anugoli05/MyGoWSwithEnvbuild/.MyPackages"
 	"github.com/stretchr/testify/assert"
-	""github.com/anugoli05/MyGoWSwithEnvbuild/Sumv"
+	"github.com/anugoli05/MyGoWSwithEnvbuild/Sumv"
 )
 
 //TestSumvalue function validates Sumvalue function
